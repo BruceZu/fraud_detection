@@ -1,0 +1,8 @@
+*.pyc
+.ipynb_checkpoints
+*.bak
+*.swp
+.DS_Store
+*.dat
+*.pkl
+data.zip
