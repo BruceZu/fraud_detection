@@ -1,31 +1,28 @@
 # Fraud Detection Case Study
 
-For the next two days you will deal with the entire end to end pipeline of data science through a case study.  We have touched on aspects of this throughout the course but have not yet put all the pieces together in a single case study.
+Built machine learning model to predict fraud events based on event details submitted. Compared the performance of Logistic Regression, Random Forest and AdaBoost Classifier Algorithms by fine tuning the model to maximize profit using cost benefit matrix. Developed a web app using Flask, Jinja and CSS to predict the risk level of live data with a recall score of 96% and precision of 85%.
 
-The data is in that directory, under `files/data.zip`. You can uncompress the data file with this command: `unzip data.zip`.
+Due to confidentiality, the data is not made public. The python code is made available in the src file. The trained model is also available as a pickle file.
 
-## Themes you will be assessed on
+## Files in src and how to use
 
-* Software best practices (proper encapsulation and functions)
-* Product focus
-* Deployed model(s)
-* Project scoping -- independence
+* collection_app.py - Collects live data from a Heroku App and stores it into a MongoDB
+* app.py - Loads pickled model and performs the predictions on live data and pushes it to the Web app using Flask
+* logistic_statsmodels.py - Baseline model using logistic regression in Python statsmodels package
+* model_comparison.py - Compares different models by plotting
+* model.py - Compares the performance of models and stores the best model in pickle format
+* predict.py - Predicts the fraud risk level based on the probability
 
-## Rough timeline 
+## Rough timeline
 
 * Day 1: Project scoping, Model building, and an intro to Web apps
 * Day 2: Web app and deployment
 
 ## Deliverables
 
-* Model (properly commented and encapsulated on Github with a readme)
+* Model
 * Exposed API
-* Data visualization (extra)
+* Data visualization on web app
 
-## Notes
-
-* [Here](notes.md) are some notes on how to get started with the dataset and how to save your model once you've trained it.
-
-## Exercise
-
-* Follow the steps in the [exercise file](instructions.md).
+## Credits
+This project would not be possible without the efforts of my awesome teammates Rosina Norton, Kenny Durell and Praveen Raman.

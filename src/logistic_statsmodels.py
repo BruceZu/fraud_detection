@@ -5,10 +5,10 @@ from statsmodels.discrete.discrete_model import Logit
 from statsmodels
 from sklearn.model_selection import train_test_split
 
-
 # Body length
 # sale_duration
 # users_age
+
 def load_json_local(filename):
     return pd.read_json(filename)
 

@@ -15,7 +15,6 @@ from pymongo import MongoClient
 import seaborn as sn
 from pandas.plotting import scatter_matrix
 
-
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from statsmodels.discrete.discrete_model import Logit
